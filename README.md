@@ -1,7 +1,7 @@
 # Making a unsigned ipa file from Xcode
 
 ### 1. Listing Schemes of a Project
->Before you start the archive process, I reccomend finding the scheme of your project.
+>Before you start the archive process, I reccomend finding the scheme of your project that you want to convert to a ipa.
 
 #### Xcodeproj File
 * Open Terminal and write: `xcodebuild -list -project ` and drag the xcodeproj file into the terminal and press `enter` to execute the command.
