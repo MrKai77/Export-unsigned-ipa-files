@@ -4,6 +4,9 @@
 ## Listing Schemes of a Project
 >Before you start the archive process, I reccomend finding the scheme of your project.
 
+### Xcodeproj File
+* Open Terminal and write: `xcodebuild -list -project ` and drag the xcodeproj file into the terminal and press `enter` to execute the command.
+
 ## Xcodeproj File
 >Here's how to make an unsigned ipa file with a xcodeproj file. 
 1. Open Terminal and write: `xcodebuild archive -project`.
