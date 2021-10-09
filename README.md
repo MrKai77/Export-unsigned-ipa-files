@@ -22,7 +22,7 @@
 
 1. First, find the `unsigned.xcarchive` file you created in step 2 and `Show Package Contents` to enter it.
 2. Enter the `Products` folder and rename the `Applications` folder to `Payload`.
-3. Click on `Compress "Payload"` to make a zip file.
+3. Click on `Compress "Payload"` to make a zip file of the folder.
 4. Finally, rename the `Payload.zip` to `Payload.ipa`.
 
 ### Congratulations, you have successfully created a unsigned ipa file of your app!
