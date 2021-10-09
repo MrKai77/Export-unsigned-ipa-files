@@ -1,7 +1,10 @@
 # Making a unsigned ipa file from Xcode
 >A short tutorial on making unsigned ipa files from Xcode!
 
-## xcodeproj file
+## Listing Schemes of a Project
+>Before you start the archive process, I reccomend finding the scheme of your project.
+
+## Xcodeproj File
 >Here's how to make an unsigned ipa file with a xcodeproj file. 
 1. Open Terminal and write: `xcodebuild archive -project`.
 2. Drag the xcodeproj file into the terminal.
@@ -17,7 +20,7 @@ Here's the full terminal command for more advanced users:
 `xcodebuild archive -project <XCODEPROJ> -scheme <SCHEME> -archivePath unsigned.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  
 Make sure to replace `<XCODEPROJ>` and `<SCHEME>` with the xcodeproj file and scheme respectively!
 
-## xcworkspace file
+## Xcworkspace File
 >Here's how to make an unsigned ipa file with a xcworkspace file. 
 1. Open Terminal and write: `xcodebuild -workspace `.
 2. Drag the xcworkspace file into the terminal.
@@ -28,3 +31,7 @@ Make sure to replace `<XCODEPROJ>` and `<SCHEME>` with the xcodeproj file and sc
 7. There will be a folder named `Applications`. Rename that to `Payload`.
 8. Then, right click the `Payload` folder and click on `Compress "Payload"`.
 9. Finally, rename the `Payload.zip` to `<APPNAME>.ipa`, with `<APPNAME>` replaced with the app's name (alternatively, you can leave it at `Payload.ipa`).
+
+Here's the full terminal command for more advanced users:  
+`xcodebuild -workspace <XCWORKSPACE> -scheme <SCHEME> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY=”” CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  
+Make sure to replace `<XCWORKSPACE>` and `<SCHEME>` with the xcodeproj file and scheme respectively!
