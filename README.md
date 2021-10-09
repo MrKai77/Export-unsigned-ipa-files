@@ -25,4 +25,4 @@
 3. Click on `Compress "Payload"` to make a zip file.
 4. Finally, rename the `Payload.zip` to `Payload.ipa`.
 
-### Congratulations, you have successfully crated a unsigned ipa file of your app!
+### Congratulations, you have successfully created a unsigned ipa file of your app!
