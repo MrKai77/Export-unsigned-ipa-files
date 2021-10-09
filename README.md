@@ -26,5 +26,5 @@
 4. Finally, rename the `Payload.zip` to `Payload.ipa`.
 
 ### Congratulations, you have successfully created a unsigned ipa file of your app!
->Sideload the unsigned ipa file with Altstore or Sideloadly on a jailed iDevice! 
+>Sideload the unsigned ipa file with Altstore or Sideloadly on a jailed iDevice!  
 >Alternatively, install it with AppSync Unified on a jailbroken iDevice!
