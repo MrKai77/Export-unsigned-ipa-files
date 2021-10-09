@@ -12,3 +12,7 @@
 7. There will be a folder named `Applications`. Rename that to `Payload`.
 8. Then, right click the `Payload` folder and click on `Compress "Payload"`.
 9. Finally, rename the `Payload.zip` to `<APPNAME>.ipa`, with `<APPNAME>` replaced with the app's name (alternatively, you can leave it at `Payload.ipa`).
+
+Here's the full terminal command for more advanced users:  
+`xcodebuild archive -project <XCODEPROJ> -scheme <SCHEME> -archivePath unsigned.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  
+Make sure to replace `<XCODEPROJ>` and `<SCHEME>` with the xcodeproj file and scheme respectively!
