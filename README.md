@@ -1,5 +1,4 @@
 # Making a unsigned ipa file from Xcode
->A short tutorial on making unsigned ipa files from Xcode!
 
 ### 1. Listing Schemes of a Project
 >Before you start the archive process, I reccomend finding the scheme of your project.
