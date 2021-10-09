@@ -10,7 +10,7 @@
 #### Xcworkspace File
 * Open Terminal and write: `xcodebuild -list -workspace ` and drag the xcworkspace file into the terminal and press `enter` to execute the command.
 
-### 2. Making a xcarchive of your project
+### 2. Making a Xcarchive of your Project
 >Here's how to make a `unsigned.xcarchive` of your project.
 
 #### Xcodeproj File
@@ -19,7 +19,7 @@
 #### Xcworkspace File
 * Open Terminal and write: `xcodebuild -workspace <XCWORKSPACE> -scheme <SCHEME> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY=”” CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  with `<XCWORKSPACE>` and `<SCHEME>` replaced with the xcworkspace file and scheme name respectively. 
 
-### 3. Making the ipa file
+### 3. Making the Ipa File
 
 1. First, find the `unsigned.xcarchive` file you created in step 2 and `Show Package Contents` to enter it.
 2. Enter the `Products` folder and rename the `Applications` folder to `Payload`.
