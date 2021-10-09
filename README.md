@@ -1,5 +1,5 @@
 # Making a unsigned ipa file from Xcode
-#### Remember, if you have any technical difficulties, feel free to ask for help in the `Issues` tab!
+#### Remember, if you have any difficulties, feel free to ask for help in the `Issues` tab!
 
 ### 1. Listing Schemes of a Project
 >Before you start the archive process, I reccomend finding the scheme of your project that you want to convert to a ipa file.
