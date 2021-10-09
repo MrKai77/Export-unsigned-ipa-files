@@ -1,4 +1,4 @@
-# Making-a-unsigned-ipa-file-in-Xcode
+# Making a unsigned ipa file from Xcode
 >A short tutorial on making unsigned ipa files from Xcode!
 
 ## xcodeproj file
