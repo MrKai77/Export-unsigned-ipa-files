@@ -3,10 +3,10 @@
 ### 1. Listing Schemes of a Project
 
 #### Xcodeproj File
-* Open Terminal and write: `xcodebuild -list -project ` and drag the xcodeproj file into the terminal and press `enter` to execute the command.
+* Open Terminal and write: `xcodebuild -list -project` and drag the xcodeproj file into the terminal and press `enter` to execute the command.
 
 #### Xcworkspace File
-* Open Terminal and write: `xcodebuild -list -workspace ` and drag the xcworkspace file into the terminal and press `enter` to execute the command.
+* Open Terminal and write: `xcodebuild -list -workspace` and drag the xcworkspace file into the terminal and press `enter` to execute the command.
 
 ### 2. Making a Xcarchive of your Project
 
