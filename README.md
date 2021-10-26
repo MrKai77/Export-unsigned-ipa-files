@@ -1,5 +1,4 @@
 # Making a unsigned ipa file from Xcode
-#### Remember, if you have any difficulties, feel free to ask for help in the `Issues` tab!
 
 ### 1. Listing Schemes of a Project
 
