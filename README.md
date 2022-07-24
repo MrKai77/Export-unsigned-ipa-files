@@ -1,4 +1,5 @@
 # Making a unsigned ipa file from Xcode
+Follow steps `1`,`2` & `3` to successfully make an unsigned .ipa file!
 
 ### 1. Listing Schemes of a Project
 
@@ -24,5 +25,5 @@
 4. Finally, rename the `Payload.zip` to `Payload.ipa`.
 
 ### Congratulations, you have successfully created a unsigned ipa file of your app!
->Sideload the unsigned ipa file with Altstore or Sideloadly on a jailed iDevice!  
->Alternatively, install it with AppSync Unified on a jailbroken iDevice!
+>Sideload the unsigned ipa file on a jailed Device with an app such as: Altstore/Sideloadly!  
+>Alternatively, install it with AppSync Unified on a jailbroken Device!
