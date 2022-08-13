@@ -16,7 +16,7 @@ Follow steps `1`,`2` & `3` to successfully make an unsigned `.ipa` file!
 
 #### Xcworkspace File
 * Open Terminal and write: `xcodebuild -workspace <XCWORKSPACE> -scheme <SCHEME> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY=”” CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  with `<XCWORKSPACE>` and `<SCHEME>` replaced with the xcworkspace file and scheme* name respectively.  
-*If the scheme contains spaces, make sure to use quotes!
+> *If the scheme contains spaces, make sure to use quotes!
 
 ### 3. Making the Ipa File
 
