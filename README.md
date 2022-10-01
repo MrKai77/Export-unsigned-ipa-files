@@ -4,25 +4,26 @@ Follow steps `1`,`2` & `3` to successfully make an unsigned `.ipa` file!
 ### 1. Listing Schemes of a Project
 
 #### Xcodeproj File
-* Open Terminal and write: `xcodebuild -list -project` and drag the xcodeproj file into the terminal and press `enter` to execute the command.
+* Open Terminal and write `xcodebuild -list -project`, then drag the xcodeproj file into the terminal and execute the command.
 
 #### Xcworkspace File
-* Open Terminal and write: `xcodebuild -list -workspace` and drag the xcworkspace file into the terminal and press `enter` to execute the command.
+* Open Terminal and write `xcodebuild -list -workspace`, then drag the xcworkspace file into the terminal and execute the command.
 
 ### 2. Making a Xcarchive of your Project
 
 #### Xcodeproj File
-* Open Terminal and write: `xcodebuild archive -project <XCODEPROJ> -scheme <SCHEME> -archivePath unsigned.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO` with `<XCODEPROJ>` and `<SCHEME>` replaced with the xcodeproj file and scheme name respectively.* 
+* In Terminal, write `xcodebuild archive -project <XCODEPROJ> -scheme <SCHEME> -archivePath unsigned.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO` where `<XCODEPROJ>` and `<SCHEME>` are replaced with the xcodeproj file and scheme name respectively.* Then, execute the command.  
 
 #### Xcworkspace File
-* Open Terminal and write: `xcodebuild -workspace <XCWORKSPACE> -scheme <SCHEME> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY=”” CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  with `<XCWORKSPACE>` and `<SCHEME>` replaced with the xcworkspace file and scheme name respectively.*  
+* In Terminal, write `xcodebuild -workspace <XCWORKSPACE> -scheme <SCHEME> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY=”” CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  where `<XCWORKSPACE>` and `<SCHEME>` are replaced with the xcworkspace file and scheme name respectively.* Then, execute the command.  
+
 > *If the scheme contains spaces, make sure to use quotes!
 
 ### 3. Making the Ipa File
 
-1. First, find the `unsigned.xcarchive` file you created in step 2 and `Show Package Contents` to enter it.
+1. First, find the `unsigned.xcarchive` file you created in step 2 and click `Show Package Contents` to enter it.
 2. Enter the `Products` folder and rename the `Applications` folder to `Payload`.
 3. Click on `Compress "Payload"` to make a zip file of the folder.
-4. Finally, rename the `Payload.zip` to `<APPNAME>.ipa`, where `APPNAME` is the app's name.
+4. Finally, rename the `Payload.zip` to `<APPNAME>.ipa`, where `<APPNAME>` is the app's name.
 
 ### Congratulations, you have successfully created a unsigned `.ipa` file of your app!
