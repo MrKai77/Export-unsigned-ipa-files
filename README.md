@@ -1,4 +1,4 @@
-# Making a unsigned ipa file from Xcode
+# Exporting an unsigned ipa file from Xcode
 Follow steps `1`,`2` & `3` to successfully make an unsigned `.ipa` file!
 
 ### 1. Listing Schemes of a Project
@@ -12,10 +12,10 @@ Follow steps `1`,`2` & `3` to successfully make an unsigned `.ipa` file!
 ### 2. Making a Xcarchive of your Project
 
 #### Xcodeproj File
-* Open Terminal and write: `xcodebuild archive -project <XCODEPROJ> -scheme <SCHEME> -archivePath unsigned.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO` with `<XCODEPROJ>` and `<SCHEME>` replaced with the xcodeproj file and scheme* name respectively. 
+* Open Terminal and write: `xcodebuild archive -project <XCODEPROJ> -scheme <SCHEME> -archivePath unsigned.xcarchive -configuration Release CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO` with `<XCODEPROJ>` and `<SCHEME>` replaced with the xcodeproj file and scheme name respectively.* 
 
 #### Xcworkspace File
-* Open Terminal and write: `xcodebuild -workspace <XCWORKSPACE> -scheme <SCHEME> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY=”” CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  with `<XCWORKSPACE>` and `<SCHEME>` replaced with the xcworkspace file and scheme* name respectively.  
+* Open Terminal and write: `xcodebuild -workspace <XCWORKSPACE> -scheme <SCHEME> -configuration Release clean archive -archivePath unsigned.xcarchive CODE_SIGN_IDENTITY=”” CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO`  with `<XCWORKSPACE>` and `<SCHEME>` replaced with the xcworkspace file and scheme name respectively.*  
 > *If the scheme contains spaces, make sure to use quotes!
 
 ### 3. Making the Ipa File
@@ -23,8 +23,6 @@ Follow steps `1`,`2` & `3` to successfully make an unsigned `.ipa` file!
 1. First, find the `unsigned.xcarchive` file you created in step 2 and `Show Package Contents` to enter it.
 2. Enter the `Products` folder and rename the `Applications` folder to `Payload`.
 3. Click on `Compress "Payload"` to make a zip file of the folder.
-4. Finally, rename the `Payload.zip` to `Payload.ipa`.
+4. Finally, rename the `Payload.zip` to `<APPNAME>.ipa`, where `APPNAME` is the app's name.
 
 ### Congratulations, you have successfully created a unsigned `.ipa` file of your app!
->Sideload the unsigned ipa file on a jailed Device with an app such as: Altstore/Sideloadly!  
->Alternatively, install it with AppSync Unified on a jailbroken Device!
